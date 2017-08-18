@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #stream from pc cam with h264 encoding 
 gst-launch-1.0 -v v4l2src device=/dev/video0  ! videoscale ! videoconvert ! \ 
 videorate ! video/x-raw,framerate=30/1  ! \ 

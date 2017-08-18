@@ -1,3 +1,4 @@
+#!/bin/sh
 #receive ipstream from ip-cam rtsp protocol
 
 gst-launch-1.0 rtspsrc location=rtsp://<cam_ip_address>:<port>  !  decodebin ! autovideosink

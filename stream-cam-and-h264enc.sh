@@ -12,4 +12,4 @@ x264enc tune=zerolatency ! h264parse ! mpegtsmux ! tcpserversink host=IP port=PO
 # tcpserversink host=IP port=PORT
 
   
-on windows use "ksvideosrc device-index=0" in place of "v4l2src device=/dev/video0"  
+#on windows use "ksvideosrc device-index=0" in place of "v4l2src device=/dev/videoX"  
